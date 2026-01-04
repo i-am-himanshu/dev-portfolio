@@ -5,6 +5,7 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import Layout from './Layout.tsx'
 import Hero from './components/hero.tsx'
 import App from './App.tsx'
+import Home from './components/Home/Home.tsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -23,7 +24,7 @@ import App from './App.tsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="" element={<Hero />} />
+      <Route path="" element={<Home />} />
     </Route>  
   )
 )

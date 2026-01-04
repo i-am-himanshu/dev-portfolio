@@ -1,14 +1,16 @@
 import React from 'react'
 import { ModeToggle } from './mode-toggle'
 import { NavLink } from 'react-router-dom'
+import Container from './Container/Container'
 
 function Navbar() {
   return (
+    <Container>
     <header>
       <nav>
         <div>
-          <div className=' md:flex items-center relative px-4 h-14'>
-            <ul className='absolute left-1/2 -translate-x-1/2 flex justify-center p-1.5 px-4 border-1 dark:border-white border-black rounded-2xl ml-10 space-x-10 '>
+          <div className=' flex justify-between items-center relative px-10 h-14'>
+            <ul className='flex justify-center p-1.5 px-4 border-1 dark:border-white border-black rounded-2xl space-x-14 '>
               <li>
                 <NavLink 
                   to='#' 
@@ -37,13 +39,14 @@ function Navbar() {
                 </NavLink>
               </li>
             </ul>
-            <div className='md:ml-auto hidden md:block'>
+            <div className=''>
               <ModeToggle />
             </div>
           </div>
         </div>
       </nav>
     </header>
+    </Container>
   )
 }
 
